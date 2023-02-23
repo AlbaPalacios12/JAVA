@@ -1,0 +1,17 @@
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Cuantos numeros desea introducir? ");
+        int numeros = sc.nextInt();
+        int t[] = new int[numeros];
+
+        for (int i = 0; i < t.length; i++) {
+            System.out.println("Introduzca un numero ");
+            t[i] = sc.nextInt();
+        }
+        System.out.println("Los numeros en orden inverso son ");
+        for (int i = t.length - 1; i >= 0; i--) {
+            System.out.println(t[i]);
+        }
+      //  System.out.println(Arrays.toString(t)); este no se puede porque te los muestra en orden de 0 en adelante y aqui pide que le demos la vuelta
+    }
+}
