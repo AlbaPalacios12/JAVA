@@ -1,0 +1,10 @@
+    static int primitiva(int aleatorio[], int[] ordenado) {
+        int aciertos = 0;
+        for (int a : aleatorio) {
+            if (Arrays.binarySearch(ordenado, a) >= 0) {
+                aciertos++;
+            }
+        }
+        return (aciertos);
+    }
+}
