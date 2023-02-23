@@ -1,0 +1,12 @@
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+        double t[] = new double[5];
+        for (int i = 0; i < 5; i++) { //como es un incremento la variable i tiene que ser un entero (int)
+            System.out.println("Introduzca un numero ");
+            t[i] = sc.nextDouble();
+        }
+        System.out.println(Arrays.toString(t));
+    }
+
+}
