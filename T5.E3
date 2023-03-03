@@ -15,3 +15,22 @@
       //  System.out.println(Arrays.toString(t)); este no se puede porque te los muestra en orden de 0 en adelante y aqui pide que le demos la vuelta
     }
 }
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+2 PRUEBA
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int numero;
+        System.out.println("Introduzca la cantidad de numeros enteros que desea introducir");
+        numero = sc.nextInt();
+        int i = 0;
+        for (i = 0; i < numero; i++) {
+            System.out.print("Introduzca numero: ");
+            int n = sc.nextInt();
+        }
+        System.out.println("Los numeros colocados inversamente corresponden a: ");
+        for (i = numero; i > 0; i--) {
+            System.out.println(numero);
+            numero--;
+        }
+    }
+}
