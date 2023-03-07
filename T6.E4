@@ -1,0 +1,16 @@
+ public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String frase;
+        System.out.println("Introduzca una frase");
+        frase = sc.nextLine();
+        int espaciosBlancos = 0;
+        char caracter;
+        for (int i = 0; i < frase.length(); i++) {
+            caracter = frase.charAt(i);
+            if (Character.isSpaceChar(caracter)) {
+                espaciosBlancos++;
+            }
+        }
+        System.out.println("Tiene: " + espaciosBlancos + " espacios en blanco");
+    }
+}
