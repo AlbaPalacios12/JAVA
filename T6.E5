@@ -1,0 +1,15 @@
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String frase;
+        System.out.println("Introduzca una frase a la que poder darle la vuelta");
+        frase = sc.nextLine();  
+        System.out.println(alReves(frase));
+    }
+    private static String alReves(String frase) {
+        String nueva = "";
+        for (int i = 0; i < frase.length(); i++) {
+            nueva = frase.charAt(i) + nueva;
+        }
+        return nueva;
+    }
+}
