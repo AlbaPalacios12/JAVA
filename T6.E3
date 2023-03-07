@@ -1,0 +1,19 @@
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String contrasena, palabra;
+        System.out.println("El jugador 1 debe introducir una contraseña");
+        contrasena = sc.nextLine();
+        do {
+            System.out.print("Ahora el jugador 2 debe probar con una palabra: ");
+            palabra = sc.nextLine();
+            int comparacion = contrasena.compareTo(palabra);
+            if (comparacion == 0) {
+                System.out.println("Acertaste!");
+            } else if (comparacion < 0) {
+                System.out.println("La contraseña es menor que: " + palabra);
+            } else {
+                System.out.println("La contraseña es mayor que: " + palabra);
+            }
+        } while (!contrasena.equals(palabra));
+    }
+}
