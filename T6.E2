@@ -1,0 +1,18 @@
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int longitud1, longitud2;
+        System.out.println("Introduce una primera frase a comparar");
+        String cad1 = sc.nextLine();
+        System.out.println("Introduce una segunda frase");
+        String cad2 = sc.nextLine();
+        longitud1 = cad1.length();
+        longitud2 = cad2.length();
+        if (longitud1 > longitud2) {
+            System.out.println(cad1 + " es mas larga que " + cad2);
+        } else if (longitud1 == longitud2) {
+            System.out.println(cad1 + " tiene la misma longitud que " + cad2);
+        } else {
+            System.out.println(cad2 + " es mas larga que " + cad1);
+        }
+    }
+}
