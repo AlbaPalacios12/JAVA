@@ -17,10 +17,10 @@
         boolean resultado;
         String vocales = "aeiouáéíóúü";
         c = Character.toLowerCase(c);
-        if (vocales.indexOf(c) == -1) {
-            resultado = false;
+        if (vocales.indexOf(c) == -1) { // el -1 es que no lo encuentra
+            resultado = false; // no lo encuentra, luego mentira, es consonante
         } else {
-            resultado = true;
+            resultado = true; //lo encuentra
         }
         return resultado;
     }
