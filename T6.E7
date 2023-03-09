@@ -9,6 +9,7 @@
         pos = frase.indexOf(palabra);
         while (pos != -1) {
             veces++;
+            System.out.println("La palabra seleccionada se encuentra en la posición "+pos);
             pos = frase.indexOf(palabra, pos + 1);
         }
         if (veces == 0) {
