@@ -1,0 +1,32 @@
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String frase;
+        System.out.println("Introduzca una frase para averiguar si es palindrona");
+        frase = sc.nextLine();
+        frase = frase.toLowerCase();
+        String sinEspacios = eliminaEspacios(frase);
+        String invertida = alReves(sinEspacios);
+        if (sinEspacios.equals(invertida)) {
+            System.out.println("La frase es palindroma");
+        } else {
+            System.out.println("La frase no es palindroma");
+        }
+    }
+    private static String eliminaEspacios(String frase) {
+        String sin = "";
+        for (int i = 0; i < frase.length(); i++) {
+            char c = frase.charAt(i);
+            if (!Character.isWhitespace(c)) {
+                sin = sin + c;
+            }
+        }
+        return sin;
+    }
+    private static String alReves(String sinEspacios) {
+        String nueva = "";
+        for (int i = 0; i < sinEspacios.length(); i++) {
+            nueva = sinEspacios.charAt(i) + nueva;
+        }
+        return nueva;
+    }
+}
