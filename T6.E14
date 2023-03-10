@@ -1,0 +1,27 @@
+   Scanner sc = new Scanner(System.in);
+        String original;
+        String intento;
+        do {
+            System.out.println("Jugador 1. Introduzca una palabra: ");
+            original = sc.next();
+        } while (original.isEmpty());
+        String anagrama = creaAnagrama(original);
+        System.out.println("A que palabra corresponde el anagrama: " + anagrama);
+        do {
+            System.out.println("Jugasor2. ¿Cual es el original?");
+            intento = sc.next();
+        } while (!original.equals(intento));
+        System.out.println("Muy bien...");
+    }
+    private static String creaAnagrama(String original) {
+        char anagrama[] = original.toCharArray();
+        for (int numCambios = 0; numCambios < anagrama.length; numCambios++) {
+            int i = (int) (Math.random() * anagrama.length);
+            int j = (int) (Math.random() * anagrama.length);
+            char aux = anagrama[i];
+            anagrama[i] = anagrama[j];
+            anagrama[j] = aux;
+        }
+        return String.valueOf(anagrama);
+    }
+}
