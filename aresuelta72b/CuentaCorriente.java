@@ -9,15 +9,15 @@ package aresuelta72b;
  * @author 34625
  */
 class CuentaCorriente {
+
     String dni;
     String nombre;
     double saldo;
 
-    CuentaCorriente(String dni, String nombre) {
-     
-        //otra alternativa seria poner this( dni, saldo) y luego asignar el nombre
-        this (dni, 0);
-        this.nombre= nombre;
+    CuentaCorriente(String dni, String nombre, double saldo) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.saldo = 0;
     }
 
     boolean sacar(double cant) {
@@ -44,13 +44,12 @@ class CuentaCorriente {
     }
 
     CuentaCorriente(String dni, double saldo) {
-    this (dni, saldo);
-    this.nombre= "Sin asignar";
+        //otra alternativa seria poner this( dni, saldo) y luego asignar el nombre
+        this(dni, "Sin asignar", 0);
     }
 
-    public CuentaCorriente(String dni, String nombre, double saldo) {
-        this( dni, nombre, saldo) ;
-        this.nombre = nombre;
-        this.saldo = saldo;
+    CuentaCorriente(String dni, String nombre) {
+        this(dni, nombre, 0);
+
     }
 }
