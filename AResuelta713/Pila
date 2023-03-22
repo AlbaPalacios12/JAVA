@@ -1,0 +1,19 @@
+public class Pila {
+    private Lista lista; // objeto donde almacenaremos los datos
+    public Pila () {
+        lista = new Lista (); // creamos un objeto Lista
+    }
+    //apilamos añadiendo el elemento al final de la lista
+    void apilar (Integer elemento){
+        lista.insertarFinal (elemento);
+    }
+    //desapilamos extrayendo el elemento de la cima. Si la pila está vacia, es porque la lista tambien los esta y devuelve null
+    Integer desapilar (){
+        return lista.eliminar (lista.tabla.length-1);
+        }
+        public void mostrar (){
+            lista.mostrar (); 
+            
+        }
+    }
+}
