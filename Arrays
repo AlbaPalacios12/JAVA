@@ -1,0 +1,123 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author 34625
+ */
+public class Arrays {
+
+    public static void main(String[] args) {
+//        int[] unArray;
+//        
+//        unArray= new int[5];
+//        
+//        unArray[0] = 100;
+//        unArray[1] = 200;
+//        unArray[2] = 300;
+//        unArray[3] = 400;
+//        unArray[4] = 500;
+//     
+//      //EJERCICIO 1. IMPRIMIR EL FOR
+//        for (int i= 0; i<unArray.length;i++)
+//        System.out.println("Elemento " + i +" de la lista " + unArray[i]);
+
+//        //EJERCICIO 2. ORDEN INVERSO
+//          //declaramos e creamos el array
+//        int[] array2 = new int[5];
+//        Scanner sc= new Scanner(System.in);
+//        System.out.println("Introduce 5 numeros enteros");
+//        //los almacenamos en la posición iesima
+//        for (int i=0; i<array2.length;i++){
+//           array2[i]= sc.nextInt();  
+//        }
+//        sc.close();
+//        
+//        //recorremos el array en orden inverso
+//        System.out.print("-------------------------------");
+//        System.out.println("");
+//        for (int i = array2.length - 1; i>=0; i--){
+//            System.out.print(array2[i] + "-");
+//        }
+//        //EJERCICIO 3. DNI
+//            Scanner sc= new Scanner(System.in);
+//             System.out.println("Introduzca los numeros de su DNI para poder calcular la letra");
+//                int dni= sc.nextInt();
+//                sc.close();
+//                if(dni >= 0 && dni<99999999){
+//                
+//            //creamos el array que contendrá las letras
+//            char[] letras = { 'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H',
+//				'L', 'C', 'K', 'E' };
+//            int calculo= dni%23;
+//            System.out.println("Su DNI completo es: " + dni + letras[calculo]);
+//                }else{
+//                    System.out.println("Su numero de DNI no puede ser superior a 8 carácteres ni negativo");
+//                }
+//            //EJERCICIO 4. MEDIA DE UN ARRAY
+//                int suma= 0;
+//                int [] position = {2, 8, 7, 1, 5};
+//                for(int p: position){
+//                    suma += p;
+//                }
+//                System.out.println("La media del array es igual a: " + ((double)suma/position.length));
+//            
+//        //EJERCICIO 5. PEDIR 5 NUMEROS E IMPRIMA EL MAYOR
+//              int max[] = new int[5];
+//              int numMax = max[0];
+//              //2º opcion --> int numMax= Integer.MIN_VALUE; 
+//              
+//              Scanner sc = new Scanner(System.in);
+//              System.out.println("Introduzca 5 numeros para encontrar el máximo");
+//              for (int i = 0; i < max.length; i++) {
+//                  max[i] = sc.nextInt();
+//                  sc.close();
+//                  if (max[i] > numMax) {
+//                      numMax = max[i];
+//                  }
+//              }
+//              System.out.println("El numero máximo encontrado es: " + numMax);
+
+//            //EJERCICIO 6. IMPRIMIR EL MENOR
+//             int [] num = {2, 8, 7, 9, 5};
+//             int numMin = Integer.MAX_VALUE;
+//              //2º opcion --> int numMax= Integer.MIN_VALUE; 
+//             
+//              for (int n: num) {
+//                if (n < numMin) {
+//                numMin = n;
+//                  }
+//              }
+//              System.out.println("El numero máximo encontrado es: " + numMin);
+
+//            //EJERCICIO 8. SUMA POSITIVOS Y NEGATIVOS
+//             int [] num = {2, -8, 7, 9, -5};
+//             int sumPos =0;
+//             int sumNeg= 0;
+//             for(int n:num){
+//                 if (n>0){
+//                     sumPos += n;
+//                 }else{
+//                     sumNeg +=n;
+//                 }
+//             }
+//             System.out.println("La suma de numeros positivos es igual a: " + sumPos);
+//             System.out.println("La suma de numeros negativos es igual a: " + sumNeg);
+//             System.out.printf("La suma de positivos es %d y los negativos son %d\n", sumPos,sumNeg);
+
+//            //EJERCICIO 9. 
+//            int [] num = {2, 8, 7, 9, 5};
+//            int par =0, impar= 0, contadorPar=0, contadorImpar= 0; 
+//            for (int n:num){
+//                if(n%2 ==0){
+//                    //me hace la suma de los pares
+//                 par += n;
+//                 //cuento cuantos pares hay
+//                 contadorPar ++;
+//                }else{impar += n;contadorImpar++;}
+//            }
+//                System.out.println("La suma de numeros pares asciende a: " + par);
+//                System.out.println("La suma de numeros impares asciende a: " + impar);
+//                System.out.printf("La cantidad de numeros pares es de %d y los impares ascienden a %d \n ", contadorPar, contadorImpar);
+            
+    }
+}
